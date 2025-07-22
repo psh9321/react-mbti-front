@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'cute';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2503@1.0/SinchonRhapsody.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+  font-family: 'basic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/SeoulAlrimTTF-Heavy.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+    color: #2E2819;
+    background-color: #FDF8E6;
+    overflow-x: hidden;
+    font-family: "basic";
+}
+
+.copyRight {
+    display: block;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #222;
+}
+
+.copyRight span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+@media all and (max-width : 560px) {
+    .copyRight { font-size: 1rem; }
+} 
+
+@media all and (max-width : 499px) {
+    .copyRight { font-size: 0.8rem; }
+}

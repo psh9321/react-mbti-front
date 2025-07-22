@@ -1,0 +1,52 @@
+.notFound {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 250px;
+    text-align: center;
+    background-color: #ededed;
+    border-radius: 10px;
+}
+
+.notFound dt {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.notFound dd {
+    margin-top: 10px;
+    font-size: 2.6rem;
+}
+
+.notFound dd a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 15px;
+    font-size: 3rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+@media all and (max-width : 499px) {
+    .notFound {
+        width: calc(100% - 50px);
+    }
+
+    .notFound dt {
+        font-size: 2rem;        
+    }
+
+    .notFound dd {
+        font-size: 2.1rem;
+    }
+
+    .notFound dd a {
+        font-size: 2.6rem;
+    }
+}

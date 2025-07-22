@@ -1,0 +1,80 @@
+.testTitle {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.testTitle dt {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.testTitle dd {
+    line-height: 1.5;
+    margin-left: 15px;
+    font-size: 1.1rem;
+    word-break: keep-all;
+}
+
+.testTitle dd:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+.btnList {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.btnList li:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+.btnList li > * {
+    display: inline-block;
+    width: 80px;
+    height: 46px;
+    line-height: 46px;
+    font-size: inherit;
+    font-family: "basic";
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+@media all and (max-width : 1150px) {
+    .testTitle {
+        width: 600px;
+    }
+
+    .btnList {
+        margin: 25px 0;
+    }
+}
+
+@media all and (max-width : 650px) {
+    .testTitle {
+        width: calc(100% - 25px);
+    }
+}
+
+@media all and (max-width : 560px) {
+    .testTitle dt {
+        font-size: 2.4rem;
+    }
+    
+    .testTitle dd {
+        font-size: 1.8rem;
+    }
+}
+
+@media all and (max-width : 499px) {
+    .testTitle dt {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+    }
+
+    .testTitle dd {
+        font-size: 1.3rem;
+    }
+}

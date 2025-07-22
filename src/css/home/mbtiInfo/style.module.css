@@ -1,0 +1,60 @@
+.mbtiInfoBox {
+    display: block;
+    padding: 30px 20px;
+    text-align: center;
+    /* background-color: #F6D064; */
+    /* border: 1px solid #000;
+    border-radius: 10px; */
+}
+
+.mbtiInfoBox img {
+    width: 650px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.mbtiInfoBox dl dt {
+    font-size: 1.6rem;
+}
+
+.mbtiInfoBox dl dd {
+    margin: 10px 0 30px;
+    font-size: 1.2rem;
+}
+
+.mbtiInfoBox dl dd br {
+    display: none;
+}
+
+@media all and (max-width : 850px) {
+    .mbtiInfoBox dl dd {
+        font-size: 0.8rem;
+    }
+}
+
+@media all and (max-width : 700px) {
+    .mbtiInfoBox img {
+        width: calc(100% - 20px);
+    }
+}
+
+@media all and (max-width : 580px) {
+    .mbtiInfoBox dl dd {
+        line-height: 1.3;
+        font-size: 1rem;
+    }
+    .mbtiInfoBox dl dd br {
+        display: block;
+    }
+}
+
+@media all and (max-width : 499px) {
+    .mbtiInfoBox dl dt {
+        font-size: 1.1rem;
+    }
+
+    .mbtiInfoBox dl dd {
+        margin-bottom: 20px;
+        font-size: 0.8rem;
+    }
+}

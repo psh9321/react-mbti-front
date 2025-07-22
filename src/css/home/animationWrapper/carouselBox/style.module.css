@@ -1,0 +1,92 @@
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #999;
+}
+
+.carouselList {
+    position: relative;
+    display: flex;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.carouselList li {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.sourcesBox {
+    position: relative;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.sourcesBox h3 {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #F6D064;
+    border-radius: 10px;
+}
+
+.sourcesBox h3:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #F6D064 transparent;
+    z-index: -1;
+}
+
+.pagination {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pagination li {
+    width: 33.33%;
+}
+
+.pagination li.activeBar {
+    position: absolute;
+    bottom: 0;
+    width: 33.33%;
+    height: 3px;
+    background-color: #F6D064;
+    transition: 0.25s ease;
+}
+
+.pagination li button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    line-height: 1.3;
+    text-align: center;
+    font-family: "basic";
+    /* border: 1px solid #2E2819; */
+}
+
+.pagination li:nth-child(n+2) button {
+    border-left: none;
+}
+
+@media all and (max-width : 499px) {
+    .pagination li button {
+        font-size: 0.8rem;
+    }
+
+    .sourcesBox h3 {
+        font-size: 0.6rem;
+    }
+}

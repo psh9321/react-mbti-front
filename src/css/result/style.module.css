@@ -1,0 +1,292 @@
+#mbti {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 150px;
+}
+
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.mbtiBanner {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 40px;
+    padding: 50px 0;
+    border-bottom: 1px solid #999;
+    /* display: flex; */
+}
+
+.mbtiBanner .imgBox img {
+    width: 250px;
+}
+
+.mbtiBanner .txtBox {
+    width: 400px;
+    margin-left: 100px;
+    /* width: 450px; */
+}
+
+.mbtiBanner .txtBox dt {
+    color: #000; 
+    /* text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;  */
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.mbtiBanner .txtBox dt span {
+    font-size: 2rem;
+}
+
+.mbtiBanner .txtBox .subType {
+    margin-top: 10px;
+    color: #999;
+    font-size: 1.4rem;
+    word-break: keep-all;
+}
+
+.mbtiBanner .txtBox .contents {
+    line-height: 1.4;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    word-break: keep-all;
+}
+
+.mbtiBanner .btnHome {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.subPropensityContents {
+    margin-bottom: 50px;
+}
+
+.infoContents {
+    display: flex;
+    justify-content: space-around;
+}
+
+.infoBox.weaknessBox {
+    margin-top: 50px;
+}
+
+.infoBox.strengthBox ul,
+.infoBox.weaknessBox ul  {
+    list-style: circle;
+    padding-left: 30px;
+}
+
+.infoBox h3 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.infoBox ul > li {
+    line-height: 1.4;
+    font-size: 1.2rem;
+    word-break: keep-all;
+}
+
+.infoBox ul > li:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+
+.infoBox ul.featuresList li dl dt {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.infoBox ul.featuresList li dl dd {
+    line-height: 1.4;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    word-break: keep-all;
+}
+
+.subResultList {
+    margin-top: 20px;
+}
+
+.infoBox .subResultList > li:nth-child(n+2) {
+    margin-top: 40px;
+}
+
+.subResultList > li > dl dt {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.subResultList > li > dl dd ul {
+    margin:20px 0 0 20px;
+}
+
+.subResultList > li > dl dd ul li:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+.subResultList > li > dl dd ul {
+    list-style: circle;
+}
+
+.subPropensityContents .subResultList > li > dl dd ul li {
+    position: relative;
+}
+
+@media all and (max-width : 1150px) {
+
+    .inner {
+        width: calc(100% - 50px);
+    }
+}
+
+@media all and (max-width : 880px) {
+    .infoContents  {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+    .infoContents > div {
+        margin-top: 50px;
+    }
+}
+
+@media all and (max-width : 780px) {
+    .mbtiBanner {
+        height: 100%;
+        /* margin: 0 auto; */
+        padding-top: 40px;
+    }
+    
+    .mbtiBanner .imgBox img {
+        width: 180px;
+    }
+
+    .mbtiBanner .txtBox {
+        margin-left: 50px;
+    }
+
+    .mbtiBanner .txtBox dt {
+        /* font-size: 5rem; */
+        text-transform: uppercase;
+    }
+    
+    .mbtiBanner .txtBox dt span {
+        /* font-size: 1.8rem; */
+    }
+    
+    .mbtiBanner .txtBox .subType {
+        margin-top: 10px;
+        /* font-size: 2rem; */
+    }
+    
+    /* .mbtiBanner .txtBox .contents {
+        font-size: 1.6rem;
+    } */
+}
+
+@media all and (max-width : 650px) {
+    .mbtiBanner {
+        flex-direction: column;
+        margin: 0;
+        padding: 25px 0;
+    }   
+
+    .infoContents {
+        padding-left: 0;
+    }
+
+    .mbtiBanner .imgBox {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+
+    .mbtiBanner .txtBox {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .subPropensityContents .subResultList > li > dl dd ul li {
+        font-size: 1rem;
+    }
+
+    .infoBox ul.featuresList li dl dt {
+        font-weight: 700;
+    }
+    
+    .infoBox ul.featuresList li dl dd {
+        margin-left: 10px;
+    }
+}
+
+@media all and (max-width : 499px) {
+
+    .mbtiBanner {
+        padding-top: 20px;
+    }
+    .backgroundColor {
+        height: 280px;
+    }
+
+    .mbtiBanner .imgBox img {
+        width: 150px;
+    }
+
+    .mbtiBanner .txtBox {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .mbtiBanner .txtBox dt {
+        color: #000; 
+        /* text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;  */
+        text-transform: uppercase;
+    }
+    
+    .mbtiBanner .txtBox dt span {
+        font-size: 1.4rem;
+    }
+    
+    .mbtiBanner .txtBox .subType {
+        font-size: 0.9rem;
+    }
+    
+    .mbtiBanner .txtBox .contents {
+        font-size: 0.9rem;
+    }
+
+    .infoBox ul.featuresList li dl dt {
+        font-size: 1.2rem;
+    }
+
+    .infoBox ul.featuresList li dl dd {
+        font-size: 1rem;
+    }
+
+    .subPropensityContents .subResultList > li > dl dt {
+        font-size: 1.2rem;
+    }
+
+    .subPropensityContents .subResultList > li > dl dd ul li  {
+        font-size: 0.8rem;
+    }
+}

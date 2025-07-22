@@ -1,0 +1,262 @@
+.animationWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 100px 0 150px;
+}
+.animationBox {
+    order: 2;
+    width: 400px;
+}
+
+.animationItemList {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animationItemList li {
+    width: calc(50% - 10px);
+    height: 236px;
+    margin: 5px;
+}
+
+.animationItemList li .inner {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;    
+    border-radius: 10px;
+    transition: transform 0.25s ease;
+}
+
+.animationItemList li .inner.active {
+    transform: rotateY(180deg);
+}
+
+.animationItemList li .backItem,
+.animationItemList li .frontItem {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #F6D064;
+    border: 1px solid #999;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.animationItemList li .backItem::-webkit-scrollbar {
+    width: 10px;
+}
+
+.animationItemList li .backItem::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 10px;
+}
+
+.animationItemList li .backItem {
+    transform: rotateY(180deg);
+    overflow-y: auto;
+}
+
+.animationItemList li .frontItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animationItemList li .frontItem h3 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.animationItemList li .backItem dt {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.animationItemList li .backItem dd {
+    position: relative;
+    line-height: 1.3;
+    padding-left: 10px;
+    font-size: 0.9rem;
+    word-break: keep-all;
+}
+
+.animationItemList li .backItem dd:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+.animationItemList li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #F6D064;
+    border: 1px solid #999;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.animationItemList li a img,
+.animationItemList li .frontItem img {
+    display: block;
+    width: 133px;
+    height: 133px;
+}
+
+.animationItemList li a img {
+    margin-bottom: 20px;
+}
+
+.carouselBox {
+    order: 1;
+    width: 560px;
+    margin-right: 50px;
+}
+
+table {
+    width: 100%;
+}
+
+table thead tr {
+    border-bottom: 1px solid #222;
+}
+
+tr:nth-child(n+2) {
+    border-top: 1px solid #000;
+}
+
+tr > * {
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+@media all and (max-width : 1070px) {
+    .animationWrapper {
+        padding: 0 20px;
+    }
+
+    .animationItemList li .frontItem h3  {
+        font-size: 0.9rem;
+    }
+
+    .animationBox {
+        width: 50%;
+    }
+
+    .animationItemList li a {
+        font-size: 0.9rem;
+    }
+
+    .carouselBox {
+        width: calc(50% - 20px);
+        margin-right: 10px;
+    }
+
+    tr > * {
+        padding: 15px 10px;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media all and (max-width : 800px) {
+    .animationWrapper {
+        flex-direction: column;
+    }
+
+    .animationBox {
+        order: 1;
+        width: 100%;
+    }
+
+    .animationItemList li {
+        height: 400px;
+    }
+
+    .animationItemList li a,
+    .animationItemList li .frontItem h3 {
+        font-size: 1.8rem;
+    }
+
+    .animationItemList li .backItem dt {
+        font-size: 2.2rem;
+    }
+
+    .animationItemList li .backItem dd {
+        font-size: 1.6rem;
+    }
+
+    .animationItemList li a img,
+    .animationItemList li .frontItem img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .carouselBox { 
+        order: 2;
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+
+
+    tr > * {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media all and (max-width : 650px) {
+    .animationItemList li {
+        height: 280px;
+    }
+
+    .animationItemList li a,
+    .animationItemList li .frontItem h3 {
+        font-size: 1.2rem;
+    }
+
+    tr > * {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width : 499px) {
+    .animationItemList li {
+        height: 200px;
+    }
+
+    .animationItemList li .backItem dt {
+        font-size: 1.8rem;
+    }
+
+    .animationItemList li .backItem dd {
+        font-size: 0.8rem;
+    }
+
+    .animationItemList li a img,
+    .animationItemList li .frontItem img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .animationItemList li a,
+    .animationItemList li .frontItem h3 {
+        font-size: 0.8rem;
+    }
+
+    tr > * {
+        font-size: 0.65rem;
+    }
+}

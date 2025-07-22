@@ -1,0 +1,119 @@
+.testContents {
+    position: relative;
+    width : 600px;
+    height : calc(100% - 60px);
+    margin-left: 30px;
+    overflow: hidden;
+    background-color: #F6D064;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: none;
+}
+
+.mouseIcon {
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.mouseIcon svg {
+    stroke:  #999;
+}
+
+.questionList {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.questionList > li {
+    position: relative;
+    display: block;
+    padding: 10px;
+    color: #222;
+    font-size: 0.9rem;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+.questionList > li h3 {
+    line-height: 1.4;
+    word-break: keep-all;
+}
+
+.questionList > li:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+.questionList::-webkit-scrollbar {
+    width: 8px;
+}
+
+.questionList::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+}
+
+.questionList > li .checkList {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.questionList > li .checkList li:nth-child(n+2) {
+    margin-left: 12px;
+}
+
+.questionList > li .checkList li label {
+    display: flex;
+    align-items: center;
+    color: #999;
+    font-size: 1.1rem;
+    cursor: none;
+}
+
+.questionList > li .checkList li label svg {
+    width: 25px;
+    margin-right: 10px;
+    stroke: #999;
+}
+
+.questionList > li .checkList li label.on,
+.questionList > li .checkList li label:hover {
+    color: #3d8bf2;
+}
+
+.questionList > li .checkList li label.on svg,
+.questionList > li .checkList li label:hover svg {
+    stroke: #3d8bf2;
+}
+
+
+@media all and (max-width : 1150px) {
+   .testContents {
+        margin-left: 0;
+    } 
+
+}
+
+@media all and (max-width : 650px) {
+    .testContents {
+        width: calc(100% - 25px);
+    }
+}
+
+@media all and (max-width : 499px) {
+    .testContents {
+        width: calc(100% - 20px);
+    }
+
+    .mouseIcon {
+        display: none;
+    }
+
+    .questionList > li h3 {
+        font-size: 1.2rem;
+    }
+}
