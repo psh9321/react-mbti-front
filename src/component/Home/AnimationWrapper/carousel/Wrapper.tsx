@@ -6,7 +6,7 @@ import { EVENT_TYPE } from "@/types"
 
 import { EventTarget } from "@/util/common";
 
-import { DeveloperRankingTable, GlobalRanKingTable, KoreanRanKingTable } from "../tableBox/Table"
+import { DeveloperRankingTable, GlobalRanKingTable, KoreanRanKingTable } from "./tableBox/Table"
 import { Pagination } from "./Pagination";
 import { SourcesBox } from "./SourcesBox";
 

@@ -58,23 +58,22 @@
     }
 }
 
-@media all and (max-width : 560px) {
-    .testTitle dt {
-        font-size: 2.4rem;
-    }
-    
-    .testTitle dd {
-        font-size: 1.8rem;
-    }
-}
-
 @media all and (max-width : 499px) {
     .testTitle dt {
-        margin-bottom: 15px;
-        font-size: 1.8rem;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
     }
 
     .testTitle dd {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
+    }
+
+    .btnList {
+        margin: 15px 0;
+    }
+
+    .btnList li > * {
+        height: 35px;
+        line-height: 35px;
     }
 }

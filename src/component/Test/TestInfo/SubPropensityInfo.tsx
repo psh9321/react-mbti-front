@@ -109,7 +109,7 @@ export const SubPropensityInfo = () => {
             
 
             <dl className={style.testTitle}>
-                <dt>하위 유형 검사</dt>
+                <dt>MBTI 하위 유형 검사</dt>
                 <dd>
                     이 테스트는 성격심리학자 조나단 칙의 이론에 기반하여, <br/> 내향성과 외향성의 하위 유형을 탐색합니다.
                 </dd>
