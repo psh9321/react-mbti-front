@@ -1,6 +1,6 @@
 import { QUESTION, EVENT_TYPE } from "@/types"
 
-export function FisherYatesShuffle(arr : QUESTION[]) {
+export function ArrRandomShuffle(arr : QUESTION[]) {
     const result = [...arr];
 
     for (let i = result.length - 1; i > 0; i--) {
@@ -12,7 +12,7 @@ export function FisherYatesShuffle(arr : QUESTION[]) {
 }
   
 export function GetRandomItems(arr  : QUESTION[], length : number) {
-    const shuffled = FisherYatesShuffle(arr);
+    const shuffled = ArrRandomShuffle(arr);
 
     return shuffled.slice(0, length);
 }
