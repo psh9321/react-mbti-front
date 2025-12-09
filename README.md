@@ -1,5 +1,4 @@
 # React MBTI 테스트 ver 0.0.0.1
-https://react-project-tau-black.vercel.app
 
 ## 간단 하게 만든 MBTI 테스트 사이트 입니다.
 
